@@ -5,7 +5,8 @@ orbs:
 
 jobs:
   build-and-test:
-    executor: python.default
+    docker:
+      - image: buildpack-deps:trusty
     steps:
       - checkout
       - python/load-cache
