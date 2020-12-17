@@ -17,4 +17,3 @@ class HomePageTest(SimpleTestCase):
 
     def test_homepage_template(self):
         self.assertTemplateUsed(self.response, 'home.html')
-        
